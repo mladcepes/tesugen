@@ -6,7 +6,6 @@ import chalk from "chalk";
 import execa from 'execa';
 
 const regScripts = {
-    main:'index.ts',
     test:'jest'
 }
 

@@ -48,7 +48,7 @@ async function getConfig(rawArgs) {
     return {
         pkgMgr: answers.pkgMgr,
         directory: options.directory || answers.directory,
-        typescript: options.typescript || answers.typescript
+        typescript: options.typescript
     }
 }
 

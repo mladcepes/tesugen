@@ -7,13 +7,22 @@
     "test": ""
   },
   "bin": {
-    "@npmusername/tesugen-generate": "bin/create-test-app",
-    "tesugen-generate": "bin/create-test-app"
+    "@npmusername/tesugen-create": "bin/create-test-app",
+    "tesugen-create": "bin/create-test-app"
   },
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["test","api-test","test-api-generator","api-test-suite","test-suite"],
+  "keywords": [
+    "test",
+    "api-test",
+    "test-api-generator",
+    "api-test-suite",
+    "test-suite",
+    "test-framework",
+    "tesugen",
+    "api testing",
+    "test api"],
   "author": "Mladen Radivojevic",
   "license": "ISC",
   "dependencies": {
