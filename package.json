@@ -1,7 +1,7 @@
 {
   "name": "tesugen",
   "version": "1.0.0",
-  "description": "Generator for extendable basic api test suite setup",
+  "description": "Generator for extendable basic api-testing framework setup",
   "scripts": {
     "test": ""
   },

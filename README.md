@@ -4,7 +4,10 @@
 
 Use tesugen to generate basic extendable API test framework in [Typescript](https://www.typescriptlang.org/) whenever you need it!
 
-Install tesugen globally: ```npm install tesugen -g```
+Install tesugen globally on your machine: ```npm install tesugen -g```
+
+Locate to desired directory and run: ```tesugen-generate``` to generate and set up your API test framework.
+This will guide you to quick setup and you will be all set and ready to go.
 
 Setup:
 
@@ -15,6 +18,5 @@ Setup:
 * Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing!
 * Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
-Locate to desired directory and run: tesugen-generate to generate and set up your API test framework.
-This will guide you to quick setup and you will be all set and ready to go.
+
 Idea is to have quick way to generate basic setup for API-testing framework. 
