@@ -6,8 +6,8 @@
     "test": ""
   },
   "bin": {
-    "@npmusername/create-test-app": "bin/create-test-app",
-    "create-test-app": "bin/create-test-app"
+    "@npmusername/tesugen-generate": "bin/create-test-app",
+    "tesugen-generate": "bin/create-test-app"
   },
   "publishConfig": {
     "access": "public"

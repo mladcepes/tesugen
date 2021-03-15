@@ -1,8 +1,12 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
 import {createProject} from "./main";
+import chalk from "chalk";
 
 async function getConfig(rawArgs) {
+    console.log(chalk.green.bold('#######################'));
+    console.log(chalk.green.bold('# Welcome to Tesugen! #'));
+    console.log(chalk.green.bold('#######################'));
     const args = arg({
         '--typescript': Boolean,
         '-ts': '--typescript'
