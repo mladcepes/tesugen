@@ -1,0 +1,28 @@
+{
+  "name": "tesugen",
+  "version": "1.0.0",
+  "description": "Generator for extendable basic api test suite setup",
+  "scripts": {
+    "test": ""
+  },
+  "bin": {
+    "@npmusername/create-test-app": "bin/create-test-app",
+    "create-test-app": "bin/create-test-app"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["test","api-test","test-api-generator","api-test-suite","test-suite"],
+  "author": "Mladen Radivojevic",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "execa": "^5.0.0",
+    "inquirer": "^8.0.0",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}
