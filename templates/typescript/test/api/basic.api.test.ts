@@ -2,7 +2,7 @@ import { ctx } from '../setup'
 
 describe('Feature: First basic test', () => {
 
-    describe('Scenario: User wants to perform GEt request to specific endpoint', () => {
+    describe('Scenario: User wants to perform GET request to specific endpoint', () => {
 
         it('First test: Should check if the status code is 200', async () => {
             
