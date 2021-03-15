@@ -1,5 +1,5 @@
 import { Response, SuperAgentTest } from 'supertest';
-import { testRoutes, TestRoutes } from './routes/testRoutes';
+import { testingRoutes, TestRoutes } from './routes/testRoutes';
 import { testAgent } from './testAgent';
 
 export class TestClient {
@@ -30,4 +30,4 @@ export class TestClient {
     }
 }
 
-export const testClientShould = new TestClient(testAgent, testRoutes);
+export const testClientShould = new TestClient(testAgent, testingRoutes);

@@ -8,4 +8,4 @@ export class TestRoutes {
     ) {}
 }
 
-export const testRoutes = new TestRoutes();
+export const testingRoutes = new TestRoutes();

@@ -18,7 +18,7 @@ You will be asked to choose your package manager, name your directory and you wi
 * Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing!
 * Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
-Idea is to have quick way to generate basic setup for API-testing framework. For initial version, the setup is listed. This is highlt configurable, you can adjust it to your project needs, weither you prefer other test runner, reporter or http client! 
+Idea is to have quick way to generate basic setup for API-testing framework. For initial version, the setup is listed. This is highly configurable, you can adjust it to your project needs, weither you prefer other test runner, reporter or http client! 
 
 **Test runner**
 Initial test runner is [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters) with [TS-Jest](https://www.npmjs.com/package/ts-jest) for [Typescript](https://www.typescriptlang.org/) support. Jest configuration file is jest.config.js. Create desired npm scripts to run desired tests: 

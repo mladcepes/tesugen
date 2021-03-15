@@ -1,4 +1,4 @@
-import { ctx } from '../setup'
+import { ctx } from '../../src/setup'
 
 describe('Feature: First basic test', () => {
 
