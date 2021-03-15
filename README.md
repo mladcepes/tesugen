@@ -1,13 +1,13 @@
 # Tesugen 
 ## Version 1.0.0
-### Extendable API tests basic setup generator - Set up  your API test framework easy!
+### Extendable basic API tests setup generator - Setup  your API test framework easy!
 
 Use tesugen to generate basic extendable API test framework in [Typescript](https://www.typescriptlang.org/) whenever you need it!
 
 Install tesugen globally on your machine: ```npm install tesugen -g```
 
-Locate to desired directory and run: ```tesugen-generate``` to generate and set up your API test framework.
-This will guide you to quick setup and you will be all set and ready to go.
+Locate to desired directory and run: ```tesugen-generate``` to generate and setup your API test framework.
+You will be asked to choose your package manager, name your directory and you will be ready to go!
 
 Setup:
 
