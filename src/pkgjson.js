@@ -6,11 +6,12 @@ import chalk from "chalk";
 import execa from 'execa';
 
 const regScripts = {
+    main:'index.ts',
     test:'jest'
 }
 
 const typeScripts = {
-    test:'jest'
+    test:'jest',
 }
 
 const access = promisify(fs.access)
@@ -72,7 +73,7 @@ export const npmSetup = async options => {
             const result = await execa('git', ['init'], {
                 cwd: options.targetDirectory
             });
-            console.log(result)
+            console.log(chalk.green.bold(result.stdout))
             if (result.failed) {
                 throw new Error(`Failed to initialize Git.`)
             }

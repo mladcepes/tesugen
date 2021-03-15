@@ -44,7 +44,7 @@ export const packageList = options => {
 
     const classValidator = taskListGenerator('Class-validator', pkgList['class-validator'], true);
     const jestTask = taskListGenerator('Jest', pkgList['jest'], true);
-    const jestHtmlReportersTask = taskListGenerator('JestHTMLReporters', pkgList['jest-html-reporters'], true)
+    const jestHtmlReportersTask = taskListGenerator('Jest HTML Reporter', pkgList['jest-html-reporters'], true)
     const dotenvTask = taskListGenerator('Dotenv', pkgList['dotenv'], true);
     const tsJest = taskListGenerator('TS-Jest', pkgList['ts-jest'], true)
     const superTestTask = taskListGenerator('SuperTest', pkgList['supertest'], true)
