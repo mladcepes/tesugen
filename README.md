@@ -22,4 +22,7 @@ Idea is to have quick way to generate basic setup for API-testing framework. For
 
 **Class validator**: Function located in ./validation/responseValidation can be used for extended contract/integration testing. Make sure to create proper models according to desired response from your project documentation. To speed this process up, use any JSON to TS generator online to quickly convert JSON to TS interfaces/classes.
 
-**BASE_URL** is stored in your local .env file. This is also highly conigurable, you can adjust this to your project needs. You can also store test credentials in local .env file and use them for authorized endpoints. 
+**BASE_URL** is stored in your local .env file. This is also highly conigurable, you can adjust this to your project needs. Test credentials can also be stored in local .env file and be used for authorized endpoints. [Supertest Agent](https://www.npmjs.com/package/supertest) supports setting header: 
+```
+supertest.agent(String(process.env.BASE_URL)).set({'Authorization':`${bearerToken}`}); 
+```
