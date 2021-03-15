@@ -29,3 +29,8 @@ expect(validateResponse(basicResponse).toBeTruthy();
 ```
 supertest.agent(String(process.env.BASE_URL)).set({'Authorization':`${bearerToken}`}); 
 ```
+
+**Dotenv file example** : 
+```
+BASE_URL=https://www.aaa.ccc
+```
