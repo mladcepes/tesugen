@@ -4,9 +4,15 @@
 
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
-Install tesugen globally on your machine: ```npm install tesugen -g```
+Install tesugen globally on your machine:
 
-Locate to desired directory and run: ```tesugen-create``` to create and setup your API test framework.
+ ```npm install tesugen -g```
+
+Locate to desired directory and run: 
+
+```tesugen-create``` 
+
+to create and setup your API test framework.
 You will be asked to choose your package manager, name your directory and you will be ready to go.
 
 **Setup:**
