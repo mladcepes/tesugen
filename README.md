@@ -1,6 +1,6 @@
 # **Tesugen**
 ## Version 1.0.0
-### Basic API tests setup generator - Setup  your API-testing framework easily.
+### Basic API tests setup generator - Setup your API-testing framework easily.
 
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
@@ -28,18 +28,18 @@ Idea is to have quick way to generate basic setup for API-testing framework. For
 
 **Structure:**
 
-* src
-    * routes
-        * testRoutes.ts - Initial routes setup (Endpoints which will be the target)
-    * client.ts - Initial test client setup
-    * setup.ts - Initial test controller setup
-    * testAgent.ts - Superagent initial setup
-* test - test folder where you can organize your tests
-* validation - validateResponse function for aditional contract/integration testing
-* .env - local environment file
-* .gitignore
-* index.ts
-* jest.config.js - Initial Jest config file
+- src
+    - routes
+        - testRoutes.ts - Initial routes setup (Endpoints which will be the target)
+    - client.ts - Initial test client setup
+    - setup.ts - Initial test controller setup
+    - testAgent.ts - Superagent initial setup
+- test - test folder where you can organize your tests
+- validation - validateResponse function for aditional contract/integration testing
+- .env - local environment file
+- .gitignore
+- index.ts
+- jest.config.js - Initial Jest config file
 
 
 **Test runner:**
