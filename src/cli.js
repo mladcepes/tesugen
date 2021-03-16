@@ -7,6 +7,7 @@ async function getConfig(rawArgs) {
     console.log(chalk.green.bold('#######################'));
     console.log(chalk.green.bold('# Welcome to Tesugen! #'));
     console.log(chalk.green.bold('#######################'));
+    console.log(chalk.green.bold('Feel free to contact me for any feedback: mladcepes@gmail.com'));
     const args = arg({
         '--typescript': Boolean,
         '-ts': '--typescript'
