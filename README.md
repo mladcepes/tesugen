@@ -1,13 +1,13 @@
 # **Tesugen**
 ## Version 1.0.0
-### Basic API tests setup generator - Setup  your API-testing framework easily!
+### Basic API tests setup generator - Setup  your API-testing framework easily.
 
-Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it!
+Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
 Install tesugen globally on your machine: ```npm install tesugen -g```
 
 Locate to desired directory and run: ```tesugen-create``` to create and setup your API test framework.
-You will be asked to choose your package manager, name your directory and you will be ready to go!
+You will be asked to choose your package manager, name your directory and you will be ready to go.
 
 **Setup:**
 
@@ -15,7 +15,7 @@ You will be asked to choose your package manager, name your directory and you wi
 * Test runner: [Jest](https://jestjs.io/)
 * Test reporter: [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters)
 * HTTP Client: [Supertest Agent](https://www.npmjs.com/package/supertest)
-* Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing!
+* Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing.
 * Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
 Idea is to have quick way to generate basic setup for API-testing framework. For initial version, the setup is listed. This is highly configurable, you can adjust it to your project needs, weither you prefer other test runner, reporter or http client! 
@@ -33,12 +33,12 @@ Idea is to have quick way to generate basic setup for API-testing framework. For
 * .env - local environment file
 * .gitignore
 * index.ts
-* jest.congig.js - Initial Jest config file
+* jest.config.js - Initial Jest config file
 
 
 **Test runner:**
 
-Initial test runner is [Jest](https://jestjs.io/) with [TS-Jest](https://www.npmjs.com/package/ts-jest) for [Typescript](https://www.typescriptlang.org/) support. Jest configuration file is jest.config.js. Create desired npm scripts to run desired tests: 
+Initial test runner is [Jest](https://jestjs.io/) with [TS-Jest](https://www.npmjs.com/package/ts-jest) for [Typescript](https://www.typescriptlang.org/) support. Jest configuration file is jest.config.js. Create desired npm scripts to run specific tests: 
 ```
 "scripts": {
     "test": "jest ./test/functional/example",
