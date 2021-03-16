@@ -24,7 +24,7 @@
     "api testing",
     "test api"],
   "author": "Mladen Radivojevic",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "arg": "^5.0.0",
     "chalk": "^4.1.0",
