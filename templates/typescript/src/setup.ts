@@ -5,7 +5,7 @@ import { testAgent } from './testAgent';
 export class TestController {
     
     testClientShould: TestClient;
-    
+
     constructor() {
         this.testClientShould = new TestClient(testAgent, testingRoutes);
     }
