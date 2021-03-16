@@ -37,10 +37,12 @@ testEnvironment: 'node',
 ````
 
 **Test reports**
-Test reports will be generated in ./html-report in HTML format via [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters). Reporter can be configured in jest.config.js file. 
+Test reports will be generated in ./html-report in HTML format via [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters). Reporter can be configured in jest.config.js file. Jest supports multiple [reporters](https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options). You can even create own custom reporter.
 
 **Test client** 
-Test client can be extended and reused with no limitations. For testing multiple services, feel free to extend TestController to have multiple TestClient properties for every desired service.
+Test client can be configured and reused with no limitations. For testing multiple services, feel free to configure TestController to have multiple TestClient properties for every desired service.
+
+Test client has four basic example methods for four HTTP methods: GET, POST, PUT and DELETE. 
 
 **Class validator**: Function located in ./validation/responseValidation can be used for extended contract/integration testing. Make sure to create proper models according to desired response from your project documentation. To speed this process up, use any JSON to TS generator online to quickly convert JSON to TS interfaces/classes. Follow [Class-validator](https://www.npmjs.com/package/class-validator) documentation. Your tests will look like this: 
 ```
