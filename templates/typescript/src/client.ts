@@ -15,7 +15,7 @@ export class TestClient {
     }
 
     public async postRequestToSpecificEndpoint(route: string, body: {}): Promise<Response> {
-        const response = await this.http.post(route).send(body);
+        const response = await this.http.post(this.routes.postRoute).send(body);
         return response;
     }
 
