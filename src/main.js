@@ -13,6 +13,10 @@ export const createProject = async (options) => {
     const currentUrl = import.meta.url;
     const templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
 
+    if(process.platform === "win32") {
+        templateDir = templateDir.substring(2);
+    }
+
     console.log(templateDir);
     options.templateDirectory = templateDir;
 
