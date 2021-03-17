@@ -13,7 +13,7 @@ export const createProject = async (options) => {
 
     var currentUrl = import.meta.url;
 
-    if(process.platform === "win32") {
+    if(process.platform() === "win32") {
         currentUrl = import.meta.url.slice(7);
     };
 

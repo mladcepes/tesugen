@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
