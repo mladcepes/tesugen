@@ -1,5 +1,5 @@
 # **Tesugen**
-## Version 1.0.26
+## Version 1.0.27
 ### Basic API tests setup generator - Setup your API-testing framework easily.
 
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
