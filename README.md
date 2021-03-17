@@ -1,13 +1,23 @@
 # **Tesugen**
-## Version 1.0.30
+## Version 1.0.31
 ### Basic API tests setup generator - Setup your API-testing framework easily.
 
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
 Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (<= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (<=7.6.1) version.
+## Table of Contents  
+- [Installation & Usage](#installation-&-usage)
+- [Project setup](#project-setup) 
+- [Structure](#structure) 
+- [Test runner](#test-runner)
+- [Test reports](#test-reports)
+- [Test client](#test-client)
+- [Class validator](#class-validator)
+- [Base URL](#base-URL)
+- [Dotenv file example](#dotenv-file-example)
 
-**Usage:**
-
+## Installation & Usage
+---
 Navigate to desired directory and run:
 
 ```npx tesugen```
@@ -25,8 +35,8 @@ At desired directory run:
 to create and setup your API test framework.
 You will be asked to choose your package manager, name your directory and you will be ready to go.
 
-**Setup:**
-
+## Project-setup
+---
 * Typescript preprocessor for Jest: [TS-Jest](https://www.npmjs.com/package/ts-jest)
 * Test runner: [Jest](https://jestjs.io/)
 * Test reporter: [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters)
@@ -36,8 +46,8 @@ You will be asked to choose your package manager, name your directory and you wi
 
 Idea is to have quick way to generate basic setup for API-testing framework. For initial version, the setup is listed. This is highly configurable, you can adjust it to your project needs, weither you prefer other test runner, reporter or http client! 
 
-**Structure:**
-
+## Structure
+---
 - src
     - routes
         - testRoutes.ts - Initial routes setup (Endpoints which will be the target)
@@ -52,8 +62,8 @@ Idea is to have quick way to generate basic setup for API-testing framework. For
 - jest.config.js - Initial Jest config file
 
 
-**Test runner:**
-
+## Test runner
+---
 Initial test runner is [Jest](https://jestjs.io/) with [TS-Jest](https://www.npmjs.com/package/ts-jest) for [Typescript](https://www.typescriptlang.org/) support. Jest configuration file is jest.config.js. Create desired npm scripts to run specific tests: 
 ```
 "scripts": {
@@ -69,32 +79,31 @@ preset: 'ts-jest',
 testEnvironment: 'node',
 ````
 
-**Test reports:**
-
+## Test reports
+---
 Test reports will be generated in ./html-report in HTML format via [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters). Reporter can be configured in jest.config.js file. Jest supports multiple [reporters](https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options). You can even create own custom reporter.
 
-**Test client:** 
-
+## Test client
+---
 Test client can be configured and reused with no limitations. For testing multiple services, feel free to configure TestController to have multiple TestClient properties for every desired service.
 
 Test client has four basic example methods for four HTTP methods: GET, POST, PUT and DELETE. 
-
-**Class validator:**
-
+## Class validator
+---
 Function located in ./validation/responseValidation.ts can be used for extended contract/integration testing. Make sure to create proper models according to desired response from your project documentation. To speed this process up, use any JSON to TS generator online to quickly convert JSON to TS interfaces/classes. Example: [json2ts](http://json2ts.com/). Follow [Class-validator](https://www.npmjs.com/package/class-validator) documentation. Your tests will look like this: 
 ```
 expect(validateResponse(ProfileExampleResponse).toBeTruthy();
 ```
 
-**BASE_URL:** 
-
+## Base URL
+---
 is stored in your local .env file. This is also highly conigurable, you can adjust this to your project needs. Test credentials can also be stored in local .env file and be used for authorized endpoints. [Supertest Agent](https://www.npmjs.com/package/supertest) supports setting headers: 
 ```
 supertest.agent(String(process.env.BASE_URL)).set({'Authorization':`${bearerToken}`}); 
 ```
 
-**Dotenv file example:** 
-
+## Dotenv file example
+---
 ```
 BASE_URL=https://www.aaa.ccc
 ```
