@@ -4,13 +4,20 @@
 
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
-Makse sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (<= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (<=7.6.1) version.
+Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (<= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (<=7.6.1) version.
+
+**Usage:**
+
+Navigate to desired directory and run:
+```npx tesugen-create```
+
+OR
 
 Install tesugen globally on your machine:
 
  ```npm install tesugen -g```
 
-Locate to desired directory and run: 
+At desired directory run: 
 
 ```tesugen-create``` 
 
