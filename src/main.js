@@ -10,17 +10,17 @@ export const createProject = async (options) => {
         template: options.typescript = 'typescript',
         targetDirectory: options.targetDirectory || `${__dirname}/${options.directory}`
     }
-    const currentUrl = import.meta.url
+    const currentUrl = import.meta.url;
     const templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
-    
+
     console.log(templateDir);
     options.templateDirectory = templateDir;
 
     const npm = await npmSetup(options);
-    const packages = packageList(options)
+    const packages = packageList(options);
     const allTasks = new Listr([npm, packages]);
 
-    await allTasks.run()
+    await allTasks.run();
     console.log('%s Installation Complete', chalk.green.bold('DONE'));
-    return true
+    return true;
 }
