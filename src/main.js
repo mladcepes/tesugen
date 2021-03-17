@@ -20,8 +20,6 @@ export const createProject = async (options) => {
         templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
     }
 
-    console.log(templateDir);
-
     options.templateDirectory = templateDir;
 
     const npm = await npmSetup(options);

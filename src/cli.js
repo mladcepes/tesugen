@@ -42,8 +42,6 @@ async function getConfig(rawArgs) {
             message: 'Are you feeling great?',
             default: 'yes'
         })
-
-        
     }
 
     const answers = await inquirer.prompt(questions);
