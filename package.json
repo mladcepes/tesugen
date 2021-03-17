@@ -1,13 +1,12 @@
 {
   "name": "tesugen",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
     "test": ""
   },
   "bin": {
-    "@npmusername/tesugen-create": "bin/tesugen-create",
     "tesugen-create": "bin/tesugen-create"
   },
   "keywords": [
