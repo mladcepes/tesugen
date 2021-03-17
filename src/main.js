@@ -11,7 +11,7 @@ export const createProject = async (options) => {
         targetDirectory: options.targetDirectory || `${process.cwd()}/${options.directory}`
     }
     const currentUrl = import.meta.url;
-    const templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
+    var templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
 
     if(process.platform === "win32") {
         templateDir = templateDir.substring(2);
