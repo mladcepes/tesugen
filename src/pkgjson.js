@@ -79,6 +79,18 @@ export const npmSetup = async options => {
         }
     }
 
+    const gitIgnore = {
+        title: 'Generate GitIgnore',
+        task: async () => {
+            const result = await execa('npx', ['gitignore', 'node'], {
+                cwd: options.targetDirectory
+            })
+            if (result.failed) {
+                throw new Error('Failed to generate gitignore file.')
+            }
+        }
+    }
+
     const copyFiles = await files(options)
     const packageJson = {
         title: 'Add Scripts to Package.JSON',
@@ -86,5 +98,5 @@ export const npmSetup = async options => {
     }
 
 
-    return taskListGenerator('Initializing Project', [copyFiles, gitInit, npmInit, packageJson ], true)
+    return taskListGenerator('Initializing Project', [copyFiles, gitInit, gitIgnore, npmInit, packageJson ], true)
 }
