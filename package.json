@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.0.11",
+  "version": "1.0.10",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
@@ -9,9 +9,11 @@
   "bin": {
     "tesugen-create": "bin/tesugen-create"
   },
-  "publishConfig": { 
-    "access": "public", 
-    "branches": ["main"] 
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
   },
   "keywords": [
     "test",
