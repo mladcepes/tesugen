@@ -10,9 +10,10 @@ export const createProject = async (options) => {
         template: options.typescript = 'typescript',
         targetDirectory: options.targetDirectory || `${__dirname}/${options.directory}`
     }
-    const __template = (() => {let x = path.dirname(decodeURI(new URL(import.meta.url).pathname)); return path.resolve( (process.platform == "win32") ? x.substr(1) : x ); })()
-    //const currentUrl = import.meta.url
-    const templateDir = path.resolve(__template, '../../templates', options.template.toLowerCase());
+    const currentUrl = import.meta.url
+    const templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
+    
+    console.log(templateDir);
     options.templateDirectory = templateDir;
 
     const npm = await npmSetup(options);
