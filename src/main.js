@@ -12,13 +12,15 @@ export const createProject = async (options) => {
     }
 
     var currentUrl = import.meta.url;
+    var templateDir;
 
-    if(process.platform() === "win32") {
-        currentUrl = import.meta.url.slice(7);
-    };
+    if(process.platform === "win32") {
+        templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase()).substring(2);
+    }
+    
+    templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
 
-    console.log(currentUrl);
-    var templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
+    console.log(templateDir);
 
     options.templateDirectory = templateDir;
 

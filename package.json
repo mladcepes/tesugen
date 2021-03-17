@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.0.12",
+  "version": "1.0.18",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
@@ -34,6 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mladcepes/tesugen.git"
-  }
+    "url": "git+https://github.com/mladcepes/tesugen.git"
+  },
+  "homepage": "https://github.com/mladcepes/tesugen#readme"
 }
