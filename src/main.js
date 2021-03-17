@@ -15,7 +15,7 @@ export const createProject = async (options) => {
     var templateDir;
 
     if(process.platform === "win32") {
-        templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase()).substring(2);
+        templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase()).substring(3);
     } else {
         templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
     }
