@@ -4,6 +4,7 @@ import {promisify} from 'util';
 import {taskListGenerator} from "./utils";
 import chalk from "chalk";
 import execa from 'execa';
+import { verbose } from '../templates/typescript/jest.config';
 
 const regScripts = {
     test:'jest'
@@ -88,6 +89,7 @@ export const npmSetup = async options => {
             if (result.failed) {
                 throw new Error('Failed to generate gitignore file.')
             }
+        renderer: verbose
         }
     }
 
