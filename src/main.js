@@ -8,7 +8,7 @@ export const createProject = async (options) => {
     options = {
         ...options,
         template: options.typescript = 'typescript',
-        targetDirectory: options.targetDirectory || `${__dirname}/${options.directory}`
+        targetDirectory: options.targetDirectory || `${process.cwd()}/${options.directory}`
     }
     const currentUrl = import.meta.url;
     const templateDir = path.resolve(new URL(currentUrl).pathname, '../../templates', options.template.toLowerCase());
