@@ -10,9 +10,6 @@
     "@npmusername/tesugen-create": "bin/tesugen-create",
     "tesugen-create": "bin/tesugen-create"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "test",
     "api-test",
