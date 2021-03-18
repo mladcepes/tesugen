@@ -1,10 +1,10 @@
 # **Tesugen**
-## Version 1.0.31
-### Basic API tests setup generator - Setup your API-testing framework easily.
-
+## Version 1.0.32
+### Basic API tests setup generator - Generate and setup your API-testing framework easily.
+---
 Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
-Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (<= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (<=7.6.1) version.
+Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (>= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (>=7.6.1) version.
 ## Table of Contents  
 - [Installation & Usage](#installation-&-usage)
 - [Project setup](#project-setup) 
@@ -22,18 +22,19 @@ Navigate to desired directory and run:
 
 ```npx tesugen```
 
+This will start tesugen on your machine globally and start the project setup. You will be asked to choose your package manager and name your project. After the setup is finished, your api-testing framework is generated and ready for use. Read [Project setup](#project-setup) and [Structure](#structure) for further information.
+
 OR
 
-Install tesugen globally on your machine:
+You can install tesugen globally on your machine:
 
  ```npm install tesugen -g```
 
-At desired directory run: 
+Locate to desired directory and run: 
 
 ```tesugen-create``` 
 
-to create and setup your API test framework.
-You will be asked to choose your package manager, name your directory and you will be ready to go.
+This will also run tesugen and start the framework setup.
 
 ## Project-setup
 ---
