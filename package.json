@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
@@ -8,6 +8,9 @@
   },
   "bin": {
     "tesugen-create": "bin/tesugen-create"
+  },
+  "publishConfig": {
+    "registry":"https://www.npmjs.com/package/tesugen"
   },
   "keywords": [
     "test",
@@ -34,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mladcepes/tesugen.git"
+    "url": "git:https://github.com/mladcepes/tesugen.git"
   },
   "homepage": "https://github.com/mladcepes/tesugen#readme"
 }
