@@ -1,5 +1,5 @@
 import path from 'path';
-import Listr from 'listr';
+import Listr from 'listr2';
 import {npmSetup} from "./pkgjson";
 import {packageList} from "./packages";
 import chalk from "chalk";

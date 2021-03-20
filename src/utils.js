@@ -1,6 +1,6 @@
 
 import execa from "execa";
-import Listr from 'listr';
+import Listr from 'listr2';
 
 export const packageListGenerator = (pkgMgr, flags, packages, options) => {
     return packages.map(pkg => ({

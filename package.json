@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Generator for extendable basic api-testing framework setup",
   "main": "index.ts",
   "scripts": {
@@ -11,6 +11,11 @@
   },
   "keywords": [
     "test",
+    "testing",
+    "qa",
+    "jest",
+    "typescript",
+    "class-validator",
     "api-test",
     "test-api-generator",
     "api-test-suite",
@@ -18,7 +23,9 @@
     "test-framework",
     "tesugen",
     "api testing",
-    "test api"
+    "api-testing",
+    "test api",
+    "test-api"
   ],
   "author": "Mladen Radivojevic",
   "license": "MIT",
@@ -29,6 +36,7 @@
     "execa": "^5.0.0",
     "inquirer": "^8.0.0",
     "listr": "^0.14.3",
+    "listr2": "^3.4.3",
     "ncp": "^2.0.0",
     "pkg-install": "^1.0.0"
   },
