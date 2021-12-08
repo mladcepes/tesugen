@@ -22,7 +22,7 @@ Navigate to desired directory and run:
 
 ```npx tesugen```
 
-You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
+You will be asked to choose your package manager, test runner, name your project and you will be ready to go.
 
 ## Project-setup: [Jest](https://jestjs.io/) as selected test runner
 ---
