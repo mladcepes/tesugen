@@ -31,7 +31,8 @@ Install tesugen globally on your machine:
 
 At desired directory run: 
 
-```tesugen-create``` 
+```tesugen-create```
+
 
 to create and setup your API test framework.
 You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
