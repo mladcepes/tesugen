@@ -1,13 +1,14 @@
 # **Tesugen**
-## Version 1.0.36
-### Basic API tests setup generator - Setup your API-testing framework easily.
+## Version 1.1.0
+### Setup your API-testing framework easily.
 
-Use tesugen to create basic extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
+Use tesugen to setup extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
 Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (>= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (>=7.6.1) version.
 ## Table of Contents  
 - [Installation & Usage](#installation-&-usage)
-- [Project setup](#project-setup) 
+- [Project setup: Jest](#project-setup-jest)
+- [Project setup: TestyTS](#project-setup-testyts)  
 - [Structure](#structure) 
 - [Test runner](#test-runner)
 - [Test reports](#test-reports)
@@ -33,20 +34,25 @@ At desired directory run:
 ```tesugen-create``` 
 
 to create and setup your API test framework.
-You will be asked to choose your package manager, name your directory and you will be ready to go.
+You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
 
-## Project-setup
+## Project-setup: Jest
 ---
-* Typescript preprocessor for Jest: [TS-Jest](https://www.npmjs.com/package/ts-jest)
+* Typescript preprocessor for Jest (If selected runner is Jest): [TS-Jest](https://www.npmjs.com/package/ts-jest)
 * Test runner: [Jest](https://jestjs.io/)
-* Test reporter: [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters)
+* Test reporter for Jest: [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters)
 * HTTP Client: [Supertest Agent](https://www.npmjs.com/package/supertest)
 * Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing.
 * Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
-Idea is to have quick way to generate basic setup for API-testing framework. For initial version, the setup is listed. This is highly configurable, you can adjust it to your project needs, weither you prefer other test runner, reporter or http client! 
+## Project-setup: TestyTS
+---
+* Test runner: [TestyTS](https://testy.github.io/)
+* HTTP Client: [Supertest Agent](https://www.npmjs.com/package/supertest)
+* Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing.
+* Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
-## Structure
+## Structure: Jest
 ---
 - src
     - routes
@@ -59,12 +65,10 @@ Idea is to have quick way to generate basic setup for API-testing framework. For
 - .env - local environment file
 - .gitignore
 - index.ts
-- jest.config.js - Initial Jest config file
+- jest.config.js - Initial Jest config file (Generated only if the selected runner is Jest)
 
-
-## Test runner
 ---
-Initial test runner is [Jest](https://jestjs.io/) with [TS-Jest](https://www.npmjs.com/package/ts-jest) for [Typescript](https://www.typescriptlang.org/) support. Jest configuration file is jest.config.js. Create desired npm scripts to run specific tests: 
+Create desired npm scripts to run specific tests: 
 ```
 "scripts": {
     "test": "jest ./test/functional/example",
@@ -78,11 +82,29 @@ To have everything running smoothly, testEnvironment and preset in jest.config.j
 preset: 'ts-jest',
 testEnvironment: 'node',
 ````
-
-## Test reports
 ---
+
 Test reports will be generated in ./html-report in HTML format via [Jest-html-reporters](https://www.npmjs.com/package/jest-html-reporters). Reporter can be configured in jest.config.js file. Jest supports multiple [reporters](https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options). You can even create own custom reporter.
 
+## Structure: TestyTS
+---
+- src
+    - routes
+        - testRoutes.ts - Initial routes setup (Endpoints which will be the target)
+    - client.ts - Initial test client setup
+- test - test folder where you can organize your tests
+- validation - validateResponse function for aditional contract/integration testing
+- .env - local environment file
+- .gitignore
+
+---
+Create desired npm scripts to run specific tests: 
+```
+"scripts": {
+    "test": "testyts",
+    "test:basic": "testyts ./test/basic/example"
+  },
+```
 ## Test client
 ---
 Test client can be configured and reused with no limitations. For testing multiple services, feel free to configure TestController to have multiple TestClient properties for every desired service.
