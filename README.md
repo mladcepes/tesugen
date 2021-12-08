@@ -23,17 +23,6 @@ Navigate to desired directory and run:
 
 ```npx tesugen```
 
-OR
-
-Install tesugen globally on your machine:
-
- ```npm install tesugen -g```
-
-At desired directory run: 
-
-```tesugen-create``` 
-
-to create and setup your API test framework.
 You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
 
 ## Project-setup: [Jest](https://jestjs.io/) as selected test runner
