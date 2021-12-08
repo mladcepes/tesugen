@@ -2,16 +2,15 @@
 ## Version 1.1.0
 ### Setup your API-testing framework easily.
 
-Use tesugen to setup extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
+Use tesugen to setup API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
 Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (>= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (>=7.6.1) version.
 ## Table of Contents  
 - [Installation & Usage](#installation-&-usage)
 - [Project setup: Jest](#project-setup-jest)
 - [Project setup: TestyTS](#project-setup-testyts)  
-- [Structure](#structure) 
-- [Test runner](#test-runner)
-- [Test reports](#test-reports)
+- [Structure: Jest](#structure-jest) 
+- [Structure: TestyTS](#structure-testyts) 
 - [Test client](#test-client)
 - [Class validator](#class-validator)
 - [Base URL](#base-URL)
@@ -24,7 +23,6 @@ Navigate to desired directory and run:
 ```npx tesugen```
 
 You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
-
 
 ## Project-setup: [Jest](https://jestjs.io/) as selected test runner
 ---
