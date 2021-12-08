@@ -1,7 +1,7 @@
 {
   "name": "tesugen",
-  "version": "1.0.36",
-  "description": "Generator for extendable basic api-testing framework setup",
+  "version": "1.1.0",
+  "description": "Setup extendable API-testing framework",
   "main": "index.ts",
   "scripts": {
     "test": ""
@@ -10,7 +10,7 @@
     "tesugen-create": "bin/tesugen-create"
   },
   "publishConfig": {
-    "registry":"https://www.npmjs.com/package/tesugen"
+    "registry": "https://www.npmjs.com/package/tesugen"
   },
   "keywords": [
     "test",

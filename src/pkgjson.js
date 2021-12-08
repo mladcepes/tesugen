@@ -4,7 +4,7 @@ import {promisify} from 'util';
 import {taskListGenerator} from "./utils";
 import chalk from "chalk";
 import execa from 'execa';
-import { verbose } from '../templates/typescript/jest.config';
+import { verbose } from '../templates/typescript/jest/jest.config';
 
 const regScripts = {
     test:'jest'
@@ -18,6 +18,10 @@ const access = promisify(fs.access)
 const copy = promisify(ncp)
 
 function addToPkgJson(options) {
+    if(options.testRunner === 'TestyTs') {
+        regScripts.test = 'testyts';
+        typeScripts.test = 'testyts';
+    }
     const scripts = options.typescript ? typeScripts : regScripts
 
     const filename = `${options.targetDirectory}/package.json`
@@ -98,7 +102,6 @@ export const npmSetup = async options => {
         title: 'Add Scripts to Package.JSON',
         task: async () => addToPkgJson(options)
     }
-
 
     return taskListGenerator('Initializing Project', [copyFiles, gitInit, gitIgnore, npmInit, packageJson ], true)
 }

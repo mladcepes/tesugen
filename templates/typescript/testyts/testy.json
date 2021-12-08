@@ -1,0 +1,10 @@
+{
+    "include": ["./test/**/*.test.ts"],
+    "tsconfig": "./tsconfig.json",
+    "reporters": {
+       "standard": {
+         "color": true
+       }
+    },
+    "timeout": 10000
+  }
