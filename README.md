@@ -2,7 +2,7 @@
 ## Version 1.1.0
 ### Setup your API-testing framework easily.
 
-Use tesugen to setup extendable API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
+Use tesugen to setup API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
 
 Make sure that you are running latest stable [NodeJS](https://nodejs.org/en/) (>= 14.6.0 LTS) and [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) (>=7.6.1) version.
 ## Table of Contents  
@@ -36,7 +36,7 @@ At desired directory run:
 to create and setup your API test framework.
 You will be asked to choose your package manager, test runner, name your directory and you will be ready to go.
 
-## Project-setup: Jest
+## Project-setup: [Jest](https://jestjs.io/) as selected test runner
 ---
 * Typescript preprocessor for Jest (If selected runner is Jest): [TS-Jest](https://www.npmjs.com/package/ts-jest)
 * Test runner: [Jest](https://jestjs.io/)
@@ -45,7 +45,7 @@ You will be asked to choose your package manager, test runner, name your directo
 * Class-validator: [Class-validator](https://www.npmjs.com/package/class-validator) - For aditional contract/integration testing.
 * Working with dotenv files: [Dotenv](https://www.npmjs.com/package/dotenv)
 
-## Project-setup: TestyTS
+## Project-setup: [TestyTS](https://testy.github.io/) as selected test runner
 ---
 * Test runner: [TestyTS](https://testy.github.io/)
 * HTTP Client: [Supertest Agent](https://www.npmjs.com/package/supertest)
