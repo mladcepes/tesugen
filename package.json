@@ -1,6 +1,6 @@
 {
   "name": "tesugen",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Setup extendable API-testing framework",
   "scripts": {
     "test": ""
