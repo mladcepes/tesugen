@@ -1,5 +1,5 @@
 # **Tesugen**
-## Version 1.1.0
+## Version 1.1.1
 ### Setup your API-testing framework easily.
 
 Use tesugen to setup API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
@@ -117,3 +117,7 @@ supertest.agent(String(process.env.BASE_URL)).set({'Authorization':`${bearerToke
 ```
 BASE_URL=https://www.aaa.ccc
 ```
+
+## License
+---
+- [MIT](LICENSE)

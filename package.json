@@ -8,9 +8,6 @@
   "bin": {
     "tesugen-create": "bin/tesugen-create"
   },
-  "publishConfig": {
-    "registry": "https://www.npmjs.com/package/tesugen"
-  },
   "keywords": [
     "test",
     "api-test",
