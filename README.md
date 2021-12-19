@@ -1,5 +1,5 @@
 # **Tesugen**
-## Version 1.1.1
+## Version 1.1.3
 ### Setup your API-testing framework easily.
 
 Use tesugen to setup API-testing framework in [Typescript](https://www.typescriptlang.org/) whenever you need it.
